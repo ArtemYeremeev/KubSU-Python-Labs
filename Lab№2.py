@@ -97,7 +97,7 @@ for t in range(30):
     april.append(night)
 print('Температуры в апреле -', april)
 print('Ночи с температурой ниже 0 -', nights)
-print('Число ночем с температурой ниже 0 -', len(nights))
+print('Число ночей с температурой ниже 0 -', len(nights))
 
 from random import randint
 # Для отдельного документа вставить импорт random в первую строку
