@@ -166,34 +166,11 @@ for i in range(len(input_list)):
     if input_list[i] in spaces:
         second_list.append(spaces)
     else:
-        symbol = ord(input_list[i])
-        second_list.append(symbol)
-print('2. Код переведен в числовой формат -', second_list)
-input_list.clear()
-second_string = ''.join(second_list)
-print(second_list)
-for i in range(len(second_list)):
-    if second_list[i] != ' ':
-        pass
-    else:
-        second_list[i] = int(second_list[i]) + 2
-        symbol = (second_list[i])
-        input_list.append(symbol)
-print('3. Конечный результат -', input_list)
-
-print('Exercise 19.')
-inputtext = 'ilmujcbec gq y rpcyqspc, zsr npyargac gq rfc icw rm gr'
-input_list = list(inputtext)
-print('1. Код получен -', input_list)
-spaces = ' '
-second_list = []
-for i in range(len(input_list)):
-    if input_list[i] in spaces:
-        second_list.append(spaces)
-    else:
         symbol = chr(ord(input_list[i])+2)
         second_list.append(symbol)
-print('2. Декодировка произведена -', second_list)
+second_string = ' '.join(second_list)
+print('2. Декодировка произведена -', second_string)
+
 
 
 

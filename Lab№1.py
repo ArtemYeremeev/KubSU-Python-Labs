@@ -41,14 +41,14 @@ n = float(input("Введите степень\n"))
 print(a ** n)
 
 print('Exercise 9.')
-age = int(input("Введите возраст\n"))
+age = int(input("Введите возраст"))
 if age >= 25 and age <= 40:
     print("Подходит!")
 else:
     print("Не подходит!")
 
 print('Exercise 11.')
-age = int(input("Введите возраст\n"))
+age = int(input("Введите возраст"))
 a = [11, 12, 13, 14]
 b = [2, 3, 4]
 с = [0, 5, 6, 7, 8, 9]
@@ -65,7 +65,7 @@ else:
                 print(age, 'лет')
 
 print('Exercise 12.')
-v = float(input("Введите вещественное число\n"))
+v = float(input("Введите вещественное число"))
 if v >= 0:
     print(v)
 else:
@@ -95,7 +95,7 @@ elif rainy != 'да' and cold != 'да':
     print("Можешь надеть что угодно, погода отличная")
 
 print('Exercise 15.')
-x = int(input("Введите значение х\n"))
+x = int(input("Введите значение х"))
 if x < -1:
     print('y = ', -1)
 if x == -1:
@@ -104,10 +104,10 @@ if x > -1:
     print('y = ', 1)
 
 print('Exercise 16.')
-x = float(input("Введите значение х\n"))
+x = float(input("Введите значение х"))
 if x <= 0:
     print('y =', 0)
-if 0 < x <= 1:
+elif 0 < x <= 1:
     print('y =', x)
 else:
     print('y =', x ** 2)
@@ -124,15 +124,15 @@ z = float(input("Введите третье вещественное значе
 print(max(x, y, z))
 
 print('Exercise 19.')
-t = int(input("Сколько минут прошло с начала часа?\n"))
+t = int(input("Сколько минут прошло с начала часа?"))
 a = [1, 2, 3, 6, 7, 8]
-if t in a:
+if t % 10 in a:
     print('Зеленый')
 else:
     print('Красный')
 
 print('Exercise 20.')
-x = int(input("Введите шестизначное число\n"))
+x = int(input("Введите шестизначное число"))
 a1 = x % 10
 x = x // 10
 a2 = x % 10
