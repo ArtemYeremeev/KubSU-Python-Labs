@@ -162,11 +162,17 @@ input_list = list(inputtext)
 print('1. Код получен -', input_list)
 spaces = ' '
 second_list = []
+y = 'y'
+z = 'z'
 for i in range(len(input_list)):
     if input_list[i] in spaces:
         second_list.append(spaces)
+    elif input_list[i] in y:
+        second_list.append('a')
+    elif input_list[i] in z:
+        second_list.append('b')
     else:
-        symbol = chr(ord(input_list[i])+2)
+        symbol = chr(ord(input_list[i]) + 2)
         second_list.append(symbol)
 second_string = ' '.join(second_list)
 print('2. Декодировка произведена -', second_string)

@@ -163,7 +163,9 @@ else:
 
 print('Exercise 22.')
 day = int(input('Введите день года'))
-if day % 6 == 0 or day % 7 == 0:
+k = 365
+year = list(range(1, k))
+if day in year[::6] or day in year[::7]:
     print("Выходной!")
 else:
     print("На работу!")

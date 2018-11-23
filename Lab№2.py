@@ -102,6 +102,7 @@ print('Число ночей с температурой ниже 0 -', len(nigh
 from random import randint
 # Для отдельного документа вставить импорт random в первую строку
 print('Exercise 9.')
+count = 0
 for n in range(20):
     a = randint(1, 9)
     b = randint(1, 9)
@@ -110,8 +111,10 @@ for n in range(20):
     answer = int(input())
     if answer == question:
         print('Верно!')
+        count += 1
     else:
         print('Ошибка!')
+print(count)
 
 print('Exercise 10.')
 chislo = int(input('Ваше число - '))
