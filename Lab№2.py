@@ -46,7 +46,7 @@ for x in range(10):
     a = randint(0, 100)
     numbers.append(a)
 print(numbers)
-print('Сумма составляет - ',sum(numbers))
+print('Сумма составляет - ', sum(numbers))
 
 from random import randint
 # Для отдельного документа вставить импорт random в первую строку

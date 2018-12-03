@@ -91,8 +91,12 @@ print('В вашем тексте', count, 'предложения(ий)')
 print('Exercise 11.')
 text = input('Введите текст - ')
 for i in range(len(text)):
-    if ('ж' in text[i] and 'ы' in text[i+1]) or ('ш' in text[i] and 'ы' in text[i+1]):
-        print(text.replace('жы', 'жи') and text.replace('шы', 'ши'))
+    if 'ж' in text[i] and 'ы' in text[i+1]:
+        text = text.replace('жы', 'жи')
+    for x in range(len(text)):
+        if 'ш' in text[x] and 'ы' in text[x+1]:
+            text = text.replace('шы', 'ши')
+print(text)
 
 print('Exercise 12.')
 word = input('Введите слово - ')
