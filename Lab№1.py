@@ -163,7 +163,7 @@ else:
 
 print('Exercise 22.')
 day = int(input('Введите день года'))
-if (day - 1) % 7 < 5:
+if day % 7 < 6:
     print("На работу!")
 else:
     print("Выходной!")
