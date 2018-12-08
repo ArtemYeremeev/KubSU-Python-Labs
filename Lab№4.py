@@ -65,26 +65,30 @@ for x in range(10):
     t += 1
 print(list1)
 
-print('Exercise 6.')
 from random import randint
+print('Exercise 6.')
 # Вставить random в первую строку программы
-lines = []
-count = 0
+row = 1
 places = []
-for i in range(36):
-    place = int(randint(0, 1))
-    if place == 1:
-        count += 1
-    places.append(place)
-lines.append(places)
-print('Места в 12 ряду распределены следующим образом -', places)
-print('Число занятых мест -', count)
+for x in range(25):
+    for i in range(36):
+        place = int(randint(0, 1))
+        places.append(place)
+    print(places)
+    if row == 12:
+        print('Места в 12 ряду распределены следующим образом -', places)
+        print('Число занятых мест -', sum(places))
+    row += 1
+    places.clear()
 
 print('Exercise 7.')
 from random import randint
 # Вставить random в первую строку программы
 print('5 курсов, 8 групп, от 15 до 30 студентов в каждой группе')
 courses = []
+course_count = 1
+course = int(input('Какой курс вас интересует? - '))
+print('На курсах следующее количество студентов (по группам):')
 for x in range(5):
     groups = []
     for i in range(8):
@@ -92,11 +96,12 @@ for x in range(5):
         group1_8 = int(randint(15, 31))
         groups.append(group1_8)
     courses.append(sum(groups))
-course = int(input('Какой курс вас интересует?'))
-courses.insert(course - 1, sum(groups))
+    if course_count == course:
+        print('На', course_count, 'курсе следующее количество студентов - ')
+    print(groups)
+    course_count += 1
+courses.insert(course, sum(groups))
 courses.pop()
-print('На выбранном вами курсе следующее количество студентов (по группам) -', groups)
-print('Общее число студентов курса -', sum(groups))
 print('Общее число студентов университета (по курсам) -', courses)
 
 print('Exercise 8.')
