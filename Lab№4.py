@@ -135,8 +135,8 @@ for x in range(18):
     for i in range(36):
         place1_36 = []
         place1_36 = int(randint(0, 1))
-        if place1_36 == 1:
-            carriages.append(place1_36)
+        carriages.append(place1_36)
+    print(carriages)
     train.append(sum(carriages))
 carriage = int(input('Какой вагон вас интересует?'))
 train.insert(carriage - 1, sum(carriages))
@@ -156,6 +156,7 @@ for x in range(10):
         month1_12 = []
         month1_12 = int(randint(10, 31))
         shops.append(month1_12)
+    print(shops)
     shop_net.append(sum(shops))
 print('Общий доход сети магазинов (по каждому магазину) -', shop_net)
 shop_net_monthly = []
@@ -175,6 +176,7 @@ for x in range(12):
         user1_18 = []
         user1_18 = int(randint(20, 61))
         months.append(user1_18)
+    print(months)
     year.append(sum(months))
 print('Фонд ЗП за год (по месяцам)', year)
 print('Годовой размер фонда ЗП -', sum(year))
@@ -186,12 +188,14 @@ print('3 экзамена, 3 группы, 20 человек в каждой')
 exams = []
 for x in range(3):
     exam1_3 = []
+    print('Экзамен', x + 1)
     for i in range(3):
         group1_3 = []
         for n in range(20):
             student1_20 = []
             student1_20 = int(randint(2, 5))
             group1_3.append(student1_20)
+        print(group1_3)
         average_groups = (sum(group1_3) / 20)
         group1_3 = average_groups
         exam1_3.append(group1_3)
@@ -199,4 +203,5 @@ for x in range(3):
     exam1_3 = average_groups
     exams.append(exam1_3)
 print('Средняя оценка каждой группы -', exams)
+
 
