@@ -76,7 +76,7 @@ for x in range(25):
         places.append(place)
     print(places)
     if row == 12:
-        print('Места в 12 ряду распределены следующим образом -', places)
+        print('Места в 12 ряду распределены следующим образом - ', places)
         print('Число занятых мест -', sum(places))
     row += 1
     places.clear()
@@ -121,9 +121,9 @@ for x in range(12):
     months.append(chosen)
     count_chosen.append(chosen)
     year.append(sum(months))
-dave = (input('Кто вас интересует?'))
-print(dave, 'заработал за год следующие суммы (по месяцам)', count_chosen)
-print('Фонд ЗП за год (по месяцам)', year)
+dave = (input('Кто вас интересует? - '))
+print(dave, 'заработал за год следующие суммы (по месяцам) - ', count_chosen)
+print('Фонд ЗП за год (по месяцам) - ', year)
 
 print('Exercise 9.')
 from random import randint
@@ -138,7 +138,7 @@ for x in range(18):
         carriages.append(place1_36)
     print(carriages)
     train.append(sum(carriages))
-carriage = int(input('Какой вагон вас интересует?'))
+carriage = int(input('Какой вагон вас интересует? - '))
 train.insert(carriage - 1, sum(carriages))
 train.pop()
 print('В выбранном вами поезде имеется следующее число свободных мест (по вагонам) -', train)
